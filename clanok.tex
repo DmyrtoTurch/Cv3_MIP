@@ -1,23 +1,25 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twoside,twocolumn,slovak,a4paper,twocoloum]{article}
 
 \usepackage[slovak]{babel}
+\usepackage{wrapfig} 
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)\usepackage{wrapfig} 
 
 \usepackage{cite}
 %\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Cv4\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+\author{Dmytro Turchanenko\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{...@stuba.sk}}
@@ -29,18 +31,22 @@
 
 \begin{document}
 
+    
+
 \maketitle
 
 \begin{abstract}
-\ldots
 \end{abstract}
 
 
 
 \section{Úvod}
-
+\begin{wrapfigure}{l}{0.45\linewidth}
+  \includegraphics[width=0.95\linewidth]{cv3/STU-FIIT-ancnv.png}
+  \caption{Logo STU FIIT}
+  \label{obr:logo}
+\end{wrapfigure}
 Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
-
 Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
 Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
@@ -61,9 +67,28 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 \end{figure*}
 
 \section{Iná Nejaká časť} \label{ina}
+\includegraphics[width=0.8\linewidth]{cv3/Diagram2.png}
 
 text, iný text, nejaký iný text.
-
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
+text, iný text, nejaký iný text.
 \section{Iná časť} \label{ina}
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
@@ -105,11 +130,29 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 \section{Dôležitá časť} \label{dolezita}
 
+\begin{multline}
+  A(x)=\sum_{k=0}^{\infty} a_k x^k
+  = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 + a_5 x^5 \\ 
+  + a_6 x^6 + a_7 x^7 + a_8 x^8 + a_9 x^9 + a_{10} x^{10} + a_{11} x^{11}
+  + \cdots
+\end{multline}
 
-
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{cv3/Diagram1.png}
+    \caption{Enter Caption}
+    \label{fig:placeholder}
+\end{figure}
 
 \section{Ešte dôležitejšia časť} \label{dolezitejsia}
 
+$\begin{Bmatrix}
+1 & 2 & -56 & 1 & 5\\
+1 & 5 & -8 & 21 & 55\\
+44 & -3 & 12 & -42 & 92\\
+1 & 12 & 23 & -3 & 93\\
+-5 & 11 & 3 & 6 & 32
+\end{Bmatrix}$
 
 
 
